@@ -161,11 +161,13 @@ let g:NERDToggleCheckAllLines = 1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""" 
 
-
+"""""""""" FOR USING GVIM IN VIVADO """""""""""""
 if has('gui_running')
     if v:servername == ""
         call remote_startserver('GVIM')
     endif
 endif
 
+""""""""" In Vivado Text Editor Setting """"""""""""""
+""""""""" gvim --remote-tab-silent +[line number] [file name]
 
